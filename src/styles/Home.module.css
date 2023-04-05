@@ -1,0 +1,63 @@
+.blockTitle {
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 70px;
+  text-align: center !important;
+  color: #1b2143;
+  font-size: 50px;
+  text-transform: capitalize;
+  line-height: 1.25em;
+}
+
+/*Subscribe*/
+.subscribeForm {
+  width: 100%;
+  max-width: 700px;
+  height: 81px;
+  background-color: #f6f6f6;
+  border-radius: 40.5px;
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.emailField {
+  border: none;
+  width: 500px;
+  height: 41px;
+  margin-top: 20px;
+  margin-left: 25px;
+  background-color: #f6f6f6;
+}
+
+.subscribeBtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #f8b426;
+  text-align: center;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #1b2143;
+  font-size: 18px;
+  transition: all 0.4s ease;
+}
+
+.errorsMsg {
+  color: red;
+  font-size: 12px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
