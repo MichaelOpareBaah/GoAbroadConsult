@@ -8,6 +8,8 @@ import ServicesSection from '@/components/servicessection/ServicesSection';
 import Mission from '@/components/mission/Mission';
 import Appointment from '@/components/bookAppointment/Appointment';
 import Subscribe from '@/components/subscribe/Subscribe';
+import FaqSection from '@/components/faq/FaqSection';
+import ContactUs from '@/components/contact/ContactUs';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,7 +27,9 @@ export default function Home() {
       <Mission />
       <ServicesSection />
       {/* <Appointment /> */}
+      <ContactUs />
       <Subscribe />
+      <FaqSection />
     </>
   );
 }

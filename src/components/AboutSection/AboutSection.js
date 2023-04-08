@@ -9,14 +9,21 @@ function AboutSection() {
           About
         </Typography>
         <Typography align="center" sx={{ width: '70%', margin: 'auto' }}>
-          Jose Heritage Consult is an educational consultancy located in
-          Atonsu-Kumasi, Ghana. Our office is 6.6 Kilometers from the Kwame
-          Nkrumah University of Science and Technology. The team is made up of
-          experienced consultants who have been educated, lived, and
-          participated in international conferences in countries such as United
-          States, United Kingdom, Australia, Canada, Israel, Ireland, Mexico,
-          South Africa, and Ghana. The team has been recruiting students to
-          universities and colleges in Western countries for the past 10+ years.
+          Go Abroad Consult is an educational study abroad consult that
+          specializes in helping students pursue their academic goals and career
+          in the United States. We provide first hand US based curriculum
+          guidance, school selection and application, intensive visa interview
+          preparation, pre and post arrival preparation, and all the necessary
+          Steps and guidance you will need to settle in the United States as an
+          international student. We are bound by a team of committed specialized
+          education analysts, professors, admission recruiters, visa consulting
+          agents and financial deputies who make your sure your transition to
+          the United states is hassle free and as smooth as it can be!. We are
+          known to be one of the best recruiting team and and educational
+          consultants in the state of Wisconsin. Out reputable records speak for
+          itself. Our office is in Wisconsin and You can find us on all social
+          media platforms . Just give us a call to schedule a free academic
+          consulting
         </Typography>
       </Container>
     </React.Fragment>

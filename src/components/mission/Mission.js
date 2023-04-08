@@ -24,12 +24,16 @@ function Mission() {
             Our Vision
           </Typography>
           <Typography variant="body1" sx={{ padding: '10px' }}>
-            With so many college choices available and the wide variety among
-            the institutions that can be found across the World, it is easy to
-            become overwhelmed. Let’s face it, given the competition for getting
-            into college, the rising costs of a college education, and the fact
-            that there is not just one college that is right for you, the
-            college search and selection process can be downright scary.
+            We want your transition from your home country to the United States
+            as easily as it can be, hassle free, affordable, and meaningful.
+            With so many universities and colleges to choose from and each with
+            its own complex admission processes, we understand that the study
+            abroad process can be quite tedious and frustrated. However, our
+            motive is to take on your burden and make it ours. We take you along
+            with the process so everything makes sense to you. We want to see
+            you succeed and bring your imagination to light!. To make your
+            transition to the US affordable and seamlessly easy is our ultimate
+            goal.
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
@@ -37,12 +41,15 @@ function Mission() {
             Our History
           </Typography>
           <Typography variant="body1" sx={{ padding: '10px' }}>
-            With so many college choices available and the wide variety among
-            the institutions that can be found across the World, it is easy to
-            become overwhelmed. Let’s face it, given the competition for getting
-            into college, the rising costs of a college education, and the fact
-            that there is not just one college that is right for you, the
-            college search and selection process can be downright scary.
+            GO ABROAD CONSULT has been The backbone, Foundation, Bacon of hope,
+            To a lot of International students abroad We started as a free study
+            abroad consulting firm Which has now grown to be one of the best
+            consulting agencies for International students who strive to pursue
+            any form of higher education in the United States. Go Abroad Consult
+            strive to provide academic guidance of any form right from the
+            start! from the choice of school program, carreer guidance, tuition
+            affordability, and inflexibility all the way to working in the US
+            after graduating 🎓
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>

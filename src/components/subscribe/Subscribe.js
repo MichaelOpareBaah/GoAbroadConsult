@@ -30,9 +30,7 @@ const Subscribe = () => {
 
   return (
     <>
-      <Typography variant="h3" align="center" sx={{ paddingBottom: '2rem' }}>
-        Subscribe For Update
-      </Typography>
+      <h2 className="formTitle">Subscribe To Our Newsletter</h2>
       <form action="#" onSubmit={formik.handleSubmit} className="subscribeForm">
         <input
           type="text"

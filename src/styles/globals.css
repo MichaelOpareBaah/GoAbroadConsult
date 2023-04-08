@@ -94,3 +94,98 @@
   color: white;
   font-weight: 400;
 }
+
+/*faq */
+
+.faqContainer {
+  background-color: #000;
+  margin: 0;
+  padding: 4rem;
+}
+.faqTitle {
+  font-size: 40px;
+  line-height: 34px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: inherit;
+  text-align: center;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-bottom: 1rem;
+}
+.faq {
+  width: 70%;
+  margin: auto;
+}
+.accordionFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.readMoreLink {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/*Contact Form */
+
+.contactForm {
+  background-color: #fff;
+  margin: auto;
+  padding: 4rem;
+  width: 70%;
+}
+.formTitle {
+  font-size: 40px;
+  line-height: 34px;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: inherit;
+  text-align: center;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-bottom: 1rem;
+}
+.applyForm {
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.formControl {
+  padding-top: 10px;
+  width: auto;
+  width: 300px;
+}
+.formArea {
+  padding: 20px;
+  width: 750px;
+  margin-bottom: 15px;
+}
+.fieldRow {
+  display: flex;
+  gap: 10rem;
+  margin-bottom: 15px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.submitBtn {
+  background-color: #7b1fa2;
+  width: 150px;
+  padding: 10px;
+  border-radius: 3px;
+}
