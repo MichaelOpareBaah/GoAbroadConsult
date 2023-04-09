@@ -4,22 +4,25 @@ import axios from 'axios';
 
 function ContactUs() {
   const { log } = console;
-  const [firstname, setFirstname] = useState('');
-  const [lastname, setLastname] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [notification, setNotification] = useState('');
 
-  log('FirstNAme', firstname);
-  log('LastName', lastname);
+  log('FirstNAme', firstName);
+  log('LastName', lastName);
   log('Email', email);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true);
 
     const teamPayload = {
-      firstname,
-      lastname,
+      firstName,
+      lastName,
       email,
       phone,
       message,
@@ -28,12 +31,28 @@ function ContactUs() {
 
     try {
       const { data } = await axios({
-        url: '/api/teamadd',
+        url: '/api/travellers',
         method: 'POST',
         data: teamPayload,
       });
+      console.log("response : ",data)
       log('Response:', data);
+      if(data.success === true){
+        setNotification('Application submitted')
+        setFirstName('')
+        setLastName('')
+        setEmail('')
+        setPhone('')
+        setMessage('')
+        setLoading(false);
+      }
+      else{
+        setNotification(data.message)
+        setLoading(false);
+      }
     } catch (error) {
+      setNotification('There was error processing your request, please try again later')
+      setLoading(false);
       log('Error:', error);
     }
   };
@@ -41,6 +60,9 @@ function ContactUs() {
     <div className="contactForm">
       <h2 className="formTitle">Apply Now!</h2>
       <form action="#" onSubmit="#" className="applyForm">
+        {/* adding notification */}
+        <h2>  {notification} </h2>
+        <br/>
         <div className="fieldRow">
           <div className="field">
             <label className="formLabel" htmlFor="firstName">
@@ -51,8 +73,8 @@ function ContactUs() {
               type="text"
               name="firstName"
               id="firstName"
-              value={firstname}
-              onChange={({ target }) => setFirstname(target?.value)}
+              value={firstName}
+              onChange={({ target }) => setFirstName(target?.value)}
               required
             />
           </div>
@@ -64,8 +86,8 @@ function ContactUs() {
               className="formControl"
               type="text"
               name="lastName"
-              value={lastname}
-              onChange={({ target }) => setLastname(target?.value)}
+              value={lastName}
+              onChange={({ target }) => setLastName(target?.value)}
               id="lastName"
               required
             />
@@ -113,9 +135,11 @@ function ContactUs() {
             name="message"
           />
         </div>
-        <button onClick={handleSubmit} className="submitBtn" type="submit">
-          Submit
-        </button>
+        {loading === true ? "Processing application form ...." : 
+        <>
+        <button onClick={handleSubmit} className="submitBtn" type="submit" disabled = {loading === true ? true : false}>Submit</button>
+        </>}
+        
       </form>
     </div>
   );
